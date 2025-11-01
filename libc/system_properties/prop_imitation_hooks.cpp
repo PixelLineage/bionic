@@ -12,10 +12,10 @@
 #define GMS_UNSTABLE "com.google.android.gms.unstable"
 
 #define PROP_SECURITY_PATCH "ro.build.version.security_patch"
-#define PROP_PIH_SECURITY_PATCH "persist.sys.pihooks.SECURITY_PATCH"
+#define PROP_PIH_SECURITY_PATCH "persist.sys.pihooks.security_patch"
 
 #define PROP_FIRST_API_LEVEL "ro.product.first_api_level"
-#define PROP_PIH_FIRST_API_LEVEL "persist.sys.pihooks.DEVICE_INITIAL_SDK_INT"
+#define PROP_PIH_FIRST_API_LEVEL "persist.sys.pihooks.first_api_level"
 
 void PropImitationHooks::OnFind(const char** name) {
   if (getprogname() == nullptr || strcmp(getprogname(), GMS_UNSTABLE) != 0) {
