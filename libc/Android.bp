@@ -194,8 +194,6 @@ cc_defaults {
             exclude_static_libs: [
                 "libscudo",
             ],
-<<<<<<< HEAD
-=======
         },
         malloc_use_jemalloc: {
             cflags: ["-UUSE_SCUDO"],
@@ -206,7 +204,6 @@ cc_defaults {
             exclude_static_libs: [
                 "libscudo",
             ],
->>>>>>> eb19edf4fa (bionic: use jemalloc by default and allow opt-in to scudo (3/4))
         },
     },
 }
